@@ -5,25 +5,27 @@
    ========================================================================== */
 
 .jumbotron {
+  position: relative;
+}
+
+.jumbotron .background-image {
   background-image: url("../img/waterfall-image-by-space-lizard-pearson-falls1-flickr.jpg");
   /* Image usage rights listed as Public Domain by photographer on Flickr: https://flic.kr/p/VqhuEw */
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  text-shadow: black 0.1em 0.1em 0.1em;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.jumbotron .container {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.1em;
+  position: relative;
+  z-index: 2;
+}
